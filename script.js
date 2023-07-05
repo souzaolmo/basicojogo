@@ -1,7 +1,7 @@
 let personagem = document.getElementById('personagem')
 let obstaculo = document.getElementById('obstaculo')
 
-function pular(){
+function atack(){
     if(personagem.classList !='animar'){
         personagem.classList.add('animar')
     }
@@ -23,7 +23,7 @@ var colisao= setInterval(function(){
     if(esquerdadoobstaculo < 20 && esquerdadoobstaculo > 0 && topoPersonagem >=130){
         obstaculo.style.animation = 'none'
         obstaculo.style.display ='none'
-        alert('você é muito ruim, tente novamente!')
+        alert('Xandão te prendeu')
     }
 
 },10)
